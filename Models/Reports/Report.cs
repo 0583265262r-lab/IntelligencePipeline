@@ -1,6 +1,7 @@
 using Enumerations;
 using System;
-namespace ReportHierarchy;
+namespace IntelligencePipeline.Models.Reports;
+
 abstract class Report
 {
     private int _reportId;
