@@ -1,11 +1,13 @@
 using System;
-namespace IntelligencePipeline.Models.Enums;
-
-enum Language
+namespace IntelligencePipeline.Models.Enums
 {
-    Hebrew,
-    Arabic,
-    English,
-    Russian,
-    Other
-};
+
+    enum Language
+    {
+        Hebrew,
+        Arabic,
+        English,
+        Russian,
+        Other
+    };
+}

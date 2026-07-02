@@ -1,4 +1,4 @@
-using Enumerations;
+using IntelligencePipeline.Models.Enums;
 using System;
 using IntelligencePipeline.Models.Reports;
 

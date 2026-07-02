@@ -7,7 +7,7 @@ namespace IntelligencePipeline.Validation
     class SignalValidator : BaseValidator
     {
         protected override ValidationResult ValidateSpecificFields(Report report)
-        {
+        { 
             if ( report is not SignalReport signal)
             { return ValidationResult.Failure(""); }
             if (signal.Frequency<1.0 | signal.Frequency>3000.0)
