@@ -1,7 +1,7 @@
 using System;
 namespace IntelligencePipeline.Models.Reports;
 
-abstract class DroneReport : Report
+class DroneReport : Report
 {
     private int _altitude;
     private int _imageQuality;
@@ -28,6 +28,10 @@ abstract class DroneReport : Report
         if ( Altitude >7000)
         { score -= 2; }
         return score;
+    }
+    public override string GetSummary()
+    {
+        return base.GetSummary() + $" | Altitude: {Altitude}m, ImageQuality: {ImageQuality}%";
     }
 
 }

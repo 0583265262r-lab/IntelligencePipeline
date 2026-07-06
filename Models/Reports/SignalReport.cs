@@ -38,4 +38,8 @@ class SignalReport : Report
         { score -= 2; }
         return score; 
     }
+    public override string GetSummary()
+    {
+        return base.GetSummary() + $" | Frequency: {Frequency}MHz, Language: {Language}, Strength: {SignalStrength}dBm";
+    }
 }

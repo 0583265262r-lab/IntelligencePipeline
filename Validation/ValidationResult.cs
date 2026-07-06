@@ -7,7 +7,7 @@ namespace IntelligencePipeline.Validation
         public string? _errorMessage;
         public bool IsValid { get => _isValid; }
         public string? ErrorMessage { get => _errorMessage; }
-        public ValidationResult(bool isValid, string errorMessage)
+        public ValidationResult(bool isValid, string? errorMessage)
         {
             _isValid = isValid;
             _errorMessage = errorMessage;

@@ -53,7 +53,7 @@ namespace IntelligencePipeline.Storage
         }
         public void UpdateStatus(int reportId, ReportStatus newStatus)
         {
-            Report currentId = GetById(reportId);
+            Report? currentId = GetById(reportId);
             currentId.Status = newStatus;
         }
         public int GetTotalCount()
